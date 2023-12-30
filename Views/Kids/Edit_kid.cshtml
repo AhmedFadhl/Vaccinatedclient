@@ -1,0 +1,60 @@
+﻿@model Vaccinatedclient.Models.kids
+
+    <div class="main">
+            <div class="main_top">
+                <img src="/images/element223111-9f3.svg" alt="user">
+                <h2>إضافة  طفل  </h2>
+            </div>
+            <div class="main_bottom">
+                <form enctype="multipart/form-data" asp-action="Edit_kid">
+                <div class="form_input">
+                    <div class="main_det">
+                 <div class="main_det_input">   
+                    <div class="text_input">
+                        <h3>رقم الطفل </h3>
+                        <input asp-for=ID disabled type="text">
+                    </div>
+                    <div class="text_input">
+                        <h3>أسم الطفل</h3>
+                        <input asp-for="name" type="text">
+                    </div>
+                    <div class="text_input">
+                        <h3>تاريخ الميلاد </h3>
+                        <input asp-for="pirth_date" >
+                    </div>
+                    <div class="text_input">
+                        <h3> فصسلة الدم </h3>
+                        <input asp-for="blood" >
+                    </div>
+                    <div class="text_input">
+                        <h3>مسقط الراس </h3>
+                        <input asp-for="pirth_place" type="text">
+                    </div>
+                     <div class="text_input">
+                        <h3>أسم الاب  </h3>
+                          @Html.DropDownListFor(x => Model.father_id, Model.fathers_list, "أختر اسم الاب ")
+
+                    </div>
+                    <div class="text_input">
+                        <h3>أسم الام  </h3>
+                          @Html.DropDownListFor(x => Model.mother_id, Model.mothers_list, "أختر اسم الام ")
+
+                    </div>
+                    <div class="text_input">
+                        <h3> المستشفى </h3>
+                          @Html.DropDownListFor(x => Model.host_id, Model.hospital_list, "أختر اسم الام ")
+
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                    <div class="submit_buttons">
+                        <input type="submit" name="حفظ" value="save">
+                        <button>ألغاء</button>
+                    </div>
+                </form>
+               
+            </div>
+
+        </div>
+

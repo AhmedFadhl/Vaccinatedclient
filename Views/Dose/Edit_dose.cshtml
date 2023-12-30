@@ -1,0 +1,38 @@
+﻿@model Vaccinatedclient.Models.dose
+
+    <div class="main">
+            <div class="main_top">
+                <img src="/images/element223111-9f3.svg" alt="user">
+                <h2>إضافة  لقاح </h2>
+            </div>
+
+            <div class="main_bottom">
+                <form enctype="multipart/form-data" asp-action="Edit_dose">
+                <div class="form_input">
+                    <div class="main_det">
+                 <div class="main_det_input">   
+                    <div class="text_input">
+                        <h3>رقم اللقاح</h3>
+                        <input asp-for=ID disabled type="text">
+                    </div>
+                    <div class="text_input">
+                        <h3>أسم  اللقاح</h3>
+                        <input asp-for="name" type="text">
+                    </div>
+                    <div class="text_input">
+                        <h3>  الوصف</h3>
+                        <input asp-for="desc" type="text">
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                    <div class="submit_buttons">
+                        <input type="submit" name="حفظ" value="save">
+                        <button>ألغاء</button>
+                    </div>
+                </form>
+               
+            </div>
+
+        </div>
+

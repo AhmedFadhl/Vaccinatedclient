@@ -1,0 +1,165 @@
+/* Styles for screens with a width up to 768px */
+@media only screen and (max-width: 768px) {
+    .main_bottom .form_inputs {
+      display: block;
+    }
+    .main_bottom form .form_input input[type="text"],
+    .main_bottom form .form_input input[type="number"],
+    .main_bottom form .form_input input[type="datetime-local"],
+    select {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    #map {
+      height: 200px;
+    }
+  }
+  
+  /* Styles for screens with a width between 768px and 1024px */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .main_bottom .form_inputs {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .main_det {
+      grid-template-columns: 1fr;
+    }
+    .main_det_input {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Styles for screens with a width above 1024px */
+  @media only screen and (min-width: 1024px) {
+    .main_bottom .form_inputs {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .main_det {
+      grid-template-columns: auto 18rem;
+    }
+    .main_det_input {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .file_input {
+      width: 195px;
+      height: 214px;
+    }
+  }
+  
+  .main_bottom .form_inputs{
+      display: grid;
+      grid-template-columns: repeat(3 ,1fr);
+  }
+  
+  .main_bottom form:last-child{
+      margin-bottom: 2rem;
+  }
+  
+  .main_bottom form span{
+  
+  }
+  
+  .main_bottom form .date_input {
+  
+  }
+  
+  .main_bottom form .form_input input[type="text"],
+  .main_bottom form .form_input input[type="number"],
+  .main_bottom form .form_input input[type="datetime-local"],
+  select {
+      padding-right: 1rem;
+      width: 330px;
+      height: 35px;
+      border-radius: 5px;
+      border: solid 1.5px rgb(202, 202, 202);
+  }
+  
+  #map {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+  }
+  
+  .main_bottom form h3{
+      color: rgb(77, 77, 77);
+      font-size: medium;
+  }
+  
+  .main_det{
+      display: grid;
+      grid-template-columns: auto 18rem;
+  }
+  
+  .main_det_input{
+      display: grid;
+      grid-template-columns: repeat(2 ,1fr);
+  }
+  
+  .file_input{
+      position: relative;
+      margin-top: 1rem;
+      width: 195px;
+      height: 214px;
+      border-radius: 0px;
+      border: solid 1px #FFBA00;
+  
+  }
+  
+  .file_input img{
+      position: absolute;
+  }
+  
+  .file_span input{
+      width: 194px;
+      position: absolute;
+      bottom: 0.1rem;
+      background-color: #17C3B2;
+      color: white;
+  }
+  
+  .file_input input{
+      
+  }
+  
+  .second_section{
+      display: grid;
+      grid-template-columns: auto 22rem;
+      margin-top: 1rem;
+  }
+  
+  .second_det{
+      display: grid;
+      grid-template-columns: repeat(2 ,1fr);
+  }
+  
+  select {
+      width: 335px;
+      height: 35px;
+      border-radius: 5px;
+      border: solid 1.5px rgb(202, 202, 202);
+      font-size: 20px;
+      color: rgb(77, 77, 77);
+  }
+  
+  .submit_buttons{
+      text-align: center;
+      margin-top: 2rem;
+  }
+  
+  .submit_buttons button{
+      padding: 10px 35px;
+      border-color: transparent;
+      border-radius: 12px;
+      background-color: rgba(109, 151, 115, 1);
+      color: rgba(255, 1, 1, 1);
+      font-size: large;
+  }
+  
+  .submit_buttons input{
+      padding: 10px 35px;
+      border-color: transparent;
+      border-radius: 12px;
+      background-color: rgba(109, 151, 115, 1);
+      color: rgba(255, 185, 2, 1);
+      font-size: large;
+      margin-left: 2rem;
+  }

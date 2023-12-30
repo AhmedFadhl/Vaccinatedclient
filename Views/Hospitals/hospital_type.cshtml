@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Vaccinatedclient.Models.hospital_type>
+
+    
+        <div class="main">
+            <div class="main_top">
+                <img src="images/element223111-9f3.svg" alt="user">
+                <h2>أنواع المستشفيات والمراكز </h2>
+            </div>
+            <hr>
+            <div class="main_middel">
+                <button><a asp-action="add_hospital_type" asp-controller="Hospitals">إضافة</a></button>
+                <hr>
+            </div>
+            <div class="main_bottom">
+                <table class="table_toggler" id="dtable">
+                    <thead>
+                        <tr>
+                            <th>رقم النوع </th>
+                            <th>أسم النوع  </th>
+                            <th>الوصف </th>
+                            <th>العمليات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            
+                        <tr>
+                            <td>@item.ID</td>
+                            <td>@item.type</td>
+                            <td>@item.desc</td>
+                             <td class="management">
+                                <span class="edit"><a href="@Url.Action("Edit_hospital_type", "Hospitals",new{id=@item.ID})">
+                                   <img alt=@item.type src="/images/draw.png"> </a>
+                                </span>
+                                <span class="delet"><a href="@Url.Action("Delete_hospital_type", "Hospitals",new{id=@item.ID})">
+                                   <img alt=@item.type src="/images/trash.png"> </a>
+                                </span>
+                            </td>
+                        </tr>
+                        }
+
+
+                </tbody>
+                </table>
+            </div>
+
+        </div>

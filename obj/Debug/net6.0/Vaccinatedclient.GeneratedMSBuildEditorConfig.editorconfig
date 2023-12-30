@@ -1,0 +1,177 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Vaccinatedclient
+build_property.RootNamespace = Vaccinatedclient
+build_property.ProjectDir = e:\projects\asp\projects\Vaccinated\Vaccinatedapi\Vaccinatedclient\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = e:\projects\asp\projects\Vaccinated\Vaccinatedapi\Vaccinatedclient
+build_property._RazorSourceGeneratorDebug = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Advice/add_advice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2aWNlXGFkZF9hZHZpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Advice/Edit_advice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2aWNlXEVkaXRfYWR2aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Advice/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2aWNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Cities/add_city.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXGFkZF9jaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Cities/cities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXGNpdGllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Cities/Edit_cities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXEVkaXRfY2l0aWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Dose/add_dose.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9zZVxhZGRfZG9zZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Dose/Edit_dose.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9zZVxFZGl0X2Rvc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Dose/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9zZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Hospitals/add_hospital.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxzXGFkZF9ob3NwaXRhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Hospitals/add_hospital_type.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxzXGFkZF9ob3NwaXRhbF90eXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Hospitals/Edit_hospital.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxzXEVkaXRfaG9zcGl0YWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Hospitals/Edit_hospital_type.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxzXEVkaXRfaG9zcGl0YWxfdHlwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Hospitals/hospital.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxzXGhvc3BpdGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Hospitals/hospital_type.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxzXGhvc3BpdGFsX3R5cGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Kids/add_kid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2lkc1xhZGRfa2lkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Kids/Edit_kid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2lkc1xFZGl0X2tpZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Kids/get_kids.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2lkc1xnZXRfa2lkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/kid_vaccine/add_vaccine_kid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Nca2lkX3ZhY2NpbmVcYWRkX3ZhY2NpbmVfa2lkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/kid_vaccine/Edit_kid_vaccine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Nca2lkX3ZhY2NpbmVcRWRpdF9raWRfdmFjY2luZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/kid_vaccine/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Nca2lkX3ZhY2NpbmVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Listvaccine/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdHZhY2NpbmVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Notify/add_notify.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZ5XGFkZF9ub3RpZnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Notify/Edit_notify.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZ5XEVkaXRfbm90aWZ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Notify/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZ5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/parents/add_parent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccGFyZW50c1xhZGRfcGFyZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/parents/Edit_parents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccGFyZW50c1xFZGl0X3BhcmVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/parents/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccGFyZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Shared/_Alerts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BbGVydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Vaccines/add_vaccine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFjY2luZXNcYWRkX3ZhY2NpbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Vaccines/Edit_vaccine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFjY2luZXNcRWRpdF92YWNjaW5lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Vaccines/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFjY2luZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/projects/asp/projects/Vaccinated/Vaccinatedapi/Vaccinatedclient/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-lnpteg6wp6

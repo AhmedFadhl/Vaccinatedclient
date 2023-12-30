@@ -1,0 +1,36 @@
+@model Vaccinatedclient.Models.kid_vaccine
+
+    <div class="main">
+            <div class="main_top">
+                <img src="/images/element223111-9f3.svg" alt="user">
+                <h2>إضافة  جرعة لطفل  </h2>
+            </div>
+            <div class="main_bottom">
+                <form enctype="multipart/form-data" asp-action="Edit_kid_vaccine">
+                <div class="form_input">
+                    <div class="main_det">
+                 <div class="main_det_input">   
+
+                    <div class="text_input">
+                        <h3>أسم الطفل  </h3>
+                          @Html.DropDownListFor(x => Model.kids_Id, Model.kids, "أختر اسم الطفل ")
+
+                    </div>
+                    <div class="text_input">
+                        <h3> أسم الجرعة </h3>
+                          @Html.DropDownListFor(x => Model.vaccines_Id, Model.vaccine, "أختر اسم الجرعة ")
+
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                    <div class="submit_buttons">
+                        <input type="submit" name="حفظ" value="save">
+                        <button>ألغاء</button>
+                    </div>
+                </form>
+               
+            </div>
+
+        </div>
+

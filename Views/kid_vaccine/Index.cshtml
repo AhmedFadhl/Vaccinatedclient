@@ -1,0 +1,73 @@
+@model IEnumerable<Vaccinatedclient.multi_Models.vaccine_kids>
+
+
+<div class="main">
+    <div class="main_top">
+        <img src="~/images/element223111-9f3.svg" alt="user">
+        <h2>لقاحات الاطفال</h2>
+    </div>
+    <hr>
+    <div class="main_middel">
+        <button><a asp-action="add_vaccine_kid" asp-controller="kid_vaccine">إضافة</a></button>
+        <hr>
+    </div>
+    <div class="main_bottom">
+        <table class="table_toggler" id="dtable">
+            <thead>
+                <tr>
+                    <th>رقم الطفل</th>
+                    <th>أسم الطفل</th>
+                    <th>رقم الجرعة </th>
+                    <th> أسم الجرعة </th>
+                    <th>وقت أخذ الجرعة </th>
+                    <th>العمليات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+
+                    <tr>
+                        @if (item.kids != null)
+                        {
+
+                            <td>@item.kids.ID</td>
+                        }
+                        else
+                        {
+
+                            <td>"لايوجد معلومات"</td>
+                        }
+                        @if (item.vaccine != null)
+                        {
+
+                        <td>@item.vaccine.ID</td>
+                        <td>@item.vaccine.name</td>
+                        <td>@item.vaccine.days_to_take</td>
+                        }
+                        else
+                        {
+
+                            <td>"لايوجد معلومات"</td>
+                            <td>"لايوجد معلومات"</td>
+                            <td>"لايوجد معلومات"</td>
+                        }
+                        <td class="management">
+                            @* <span class="edit"><a href="@Url.Action("Edit_kid_vaccine",
+                        "kid_vaccine",new{kidid=@item.kid_Vaccine.kids_Id,vaccineid=@item.kid_Vaccine.vaccines_Id})">
+                        <img alt=@item.kids.name src="~/images/draw.png"> </a>
+                        </span>*@
+                            <span class="delet"><a
+                                    href="@Url.Action("Delete_kids_vaccine", "kid_vaccine",new{kidid=@item.kid_Vaccine.kids_Id,vaccineid=@item.kid_Vaccine.vaccines_Id})">
+                                    <img  src="~/images/trash.png"> </a>
+                            </span>
+                        </td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+
+</div>

@@ -1,0 +1,65 @@
+@model Vaccinatedclient.multi_Models.listvaccine
+
+
+<div class="main">
+    <div class="main_top">
+        <img src="~/images/element223111-9f3.svg" alt="user">
+        <h2>الأطفال</h2>
+    </div>
+    <hr>
+    <div class="main_middel">
+
+    </div>
+    <div class="main_bottom">
+
+
+        <div class="card_view_container">
+            @foreach (var item in Model.vaccines)
+            {
+                <div class="card_view">
+                    <h2>حالة الجرعة </h2>
+                    @if (Model.kid_Vaccines != null)
+                    {
+
+                        @foreach (var item2 in Model.kid_Vaccines)
+                        {
+                            if (item.ID == item2.vaccine.ID)
+                            {
+                                <div class="dot">
+                                    <h2>تم أخذالجرعة</h2>
+                                    <img src="~/images/black-circle.png" alt="">
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="dot">
+                                    <h2>لم يتم أخذالجرعة</h2>
+                                    <img src="~/images/rid-circle.png" alt="">
+                                </div>
+
+                            }
+                        }
+                    }
+                    else
+                    {
+                        <div>
+                            <h2>لم يتم أخذالجرعة</h2>
+                            <img src="images/rid-circle.png" alt="">
+                        </div>
+                    }
+                    <h2>أسم الجرعة</h2>
+                    <h2>@item.name</h2>
+                    <h2>اللقاح</h2>
+                    <h2>@item.dose.name</h2>
+                    <h2>وقت أخذ الجرعة</h2>
+                    <h2> @item.days_to_take</h2>
+                </div>
+            }
+        </div>
+
+
+
+
+    </div>
+
+</div>

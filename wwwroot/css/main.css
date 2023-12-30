@@ -1,0 +1,391 @@
+
+
+* {
+    margin: 0px;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #17C3B2;
+}
+
+.main_container{
+    background-color: #17C3B2;
+    width: 97vw;
+    direction: rtl;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    
+}
+.second_container{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.2rem 0 0 0;
+}
+header{
+    display: grid;
+    grid-template-columns: 15rem  200rem;  
+    border-radius: 1rem 1rem 0rem 1rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+}
+
+a{
+    color:white;
+    margin:1rem;
+}
+
+
+
+.top_right{
+    display: grid;
+    grid-template-columns: 4rem  2rem;
+
+}
+.top_right img{
+    width: 60px;
+    height: 60px;
+    margin-top: 0.7rem;
+}
+.top_right h2{
+    color: #BB8A52;
+    font-size: 30px;
+    font-family: Inter;
+}
+.top_left{
+    display: grid;
+    grid-template-columns: 70rem  4rem 4rem ;
+}
+.top_left form{
+    padding-top: 1rem;
+}
+.top_left form input{
+    width: 400px;
+    height: 40px;
+    background-color: #EDEEF3;
+    border-radius: 20px;
+    padding-right: 2rem;
+    font-size: 22px;
+    border: solid 0;
+}
+
+.dataTables_filter  {
+    width: 400px;
+    height: 40px;
+    background-color: #EDEEF3;
+    border-radius: 20px;
+    padding-right: 2rem;
+    font-size: 22px;
+    border: solid 0;
+}.dataTables_filter input {
+    width: 300px;
+    height: 20px;
+    background-color: #EDEEF3;
+    border-radius: 20px;
+    padding-right: 2rem;
+    font-size: 22px;
+}
+.top_left form input::placeholder {
+    color: #BB8A52;
+}
+.top_left img{
+    margin-top: 1rem;
+    width:50px;
+    height:50px;
+}
+
+
+
+
+
+
+
+
+.card_view_container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    padding: 3px;
+}
+.dot{
+    display: grid;
+    grid-template-columns:auto 50px ;
+}
+.card_view{
+    display: grid;
+    grid-template-columns:150px auto;
+    border: solid 3px #17C3B2;
+    border-radius: 20px;
+    padding: 4px;
+    background-color: #17C3B2;
+    box-shadow: 8px 8px 6px rgb(107, 107, 107);
+    margin: 8px;
+}
+
+.card_view img{
+    width: 40px;
+    height: 40px;
+}
+.card_view h2{
+margin-right: 1px;
+color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 15rem  auto ;
+    height: 100%;
+}
+aside{
+    background-color: #17C3B2;
+    margin-left: 0.5rem;
+    border-radius: 5rem 0 0 0;
+    padding: 1rem 0.5rem 8rem 0rem;
+    height:100%;
+}
+.aside_item{
+    display: grid;
+    grid-template-columns: 3rem auto 1rem;
+    font-family: Schoolbell;
+}
+.aside_item h3{
+    color: white;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+aside:last-child{
+    bottom:1rem;
+}
+
+aside div ul {
+    display: none;
+    margin-right: 2.5rem;
+}
+
+aside div ul li {
+        margin-bottom: 1rem;
+        color:white ;
+    }
+aside div ul li a {
+            color:white;
+        }
+
+aside div ul li:hover {
+            margin-right: 1rem;
+        }
+aside  div:hover ul {
+    display: block;
+}
+
+aside  div:hover span {
+    translate: (-9px,6px);
+    transform: rotate(-90deg);
+}
+
+aside  span {
+    left: 0;
+    color:white;
+}
+
+aside ul li:hover a {
+    color: var(--color-primary);
+}
+
+
+.main{
+    background-color: white;
+}
+.main_top{
+    display: grid;
+    grid-template-columns: 4rem auto; 
+}
+.main_top img{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.main_top h2{
+    color: #FFBA00;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Amiri;
+}
+.main> hr{
+    width: 90%;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid #FFBA00;
+}
+.main_middel button{
+    color: white;
+    background: #17C3B2;
+    width: 110px;
+    height: 36px;
+    border-radius: 8px;
+    font-size: large;
+    font-family: Inter;
+    margin-top:1rem;
+}
+.main_middel hr{
+    width: 90%;
+}
+.main_bottom{
+    margin-top: 1rem;
+}
+
+
+.btn-secondary {
+    width: 50px;
+    height: 30px;
+    background: darkturquoise;
+    cursor: pointer;
+    color: white;
+}
+.main_bottom table{
+    width: 99%;
+    border:solid 2px #FFBA00 ;
+    text-align: center;
+    direction:rtl;
+}
+table th tr:last-child{
+    width:50px;
+}
+
+.main_bottom table thead{
+background-color: #17C3B2;
+color: white;
+font-size: 24px;
+height: 40px;
+font-family:Schoolbell ;
+}
+.main_bottom table tbody tr{
+    font-size: 20px;
+    height: 40px;
+    font-family: Inter;
+}
+
+table .edit{
+    color: #17C3B2;
+}
+table .delete{
+    color: coral;
+}
+.management img{
+    width:30px;
+    height:30px;
+}.management {
+    width:130px;
+}
+.management3 img{
+    width:30px;
+    height:30px;
+}.management3 {
+    width:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.insights{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.6rem;
+    margin: 2rem;
+}
+
+.sales{
+    background-color: #17C3B2;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px cadetblue ;
+    padding: 1rem;
+    margin: 1rem;
+}
+.sales .image_border{
+    background-color: aqua;
+    border-radius: 50px;
+}
+.sales img{
+    height: 80px;
+    width: 80px;
+}
+
+
+
+
+
+
+
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: row;
+    }
+
+    /* Navigation */
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    nav a {
+        margin: 0 1rem;
+    }
+
+    /* Main content */
+    .main_content {
+        margin-top: 2rem;
+    }
+
+    /* Cards */
+    .card_view {
+        margin: 1rem;
+        grid-template-columns:repeat(1,1fr) ;
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Main container */
+    .main_container {
+        max-width: 1400px;
+        padding: 2rem;
+    }
+
+    /* Cards */
+    .card_view {
+        width: 350px;
+        grid-template-columns:repeat(2,1fr) ;
+
+    }
+}

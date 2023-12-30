@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Vaccinatedclient.Models.kids>
+
+
+<div class="main">
+    <div class="main_top">
+        <img src="~/images/element223111-9f3.svg" alt="user">
+        <h2>الأطفال</h2>
+    </div>
+    <hr>
+    <div class="main_middel">
+        <button><a asp-action="add_kid" asp-controller="Kids">إضافة</a></button>
+        <hr>
+    </div>
+    <div class="main_bottom">
+        <table class="table_toggler" id="dtable">
+            <thead>
+                <tr>
+                    <th>رقم الطفل</th>
+                    <th>أسم الطفل</th>
+                    <th>أسم المستشفى </th>
+                    <th>أسم الأب </th>
+                    <th>أسم الأم </th>
+                    <th>العمر  </th>
+                    <th>العمليات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+
+                    <tr onclick="show_viccaine(@item.ID)">
+                        <td>@item.ID</td>
+                        <td>@item.name</td>
+                        @if (item.hospital != null)
+                        {
+                            <td>@item.hospital.name</td>
+
+                        }
+                        else
+                        {
+
+                            <td>"لايوجد معلومات"</td>
+                        }
+
+                        @if (item.father != null)
+                        {
+                            <td>@item.father.name</td>
+                        }
+                        else
+                        {
+
+                            <td>"لايوجد معلومات"</td>
+                        }
+                        @if (item.mother != null)
+                        {
+                        <td>@item.mother.name</td>
+                        }
+                        else
+                        {
+                            <td>"لايوجد معلومات"</td>
+                        }
+                            <td>@item.age_in_days</td>
+                        <td class="management3">
+                            <span class="edit"><a href="@Url.Action("Index", "Listvaccine",new{id=@item.ID})">
+                                    <img alt=@item.name src="~/images/dose3111-3grxd-200h.png"> </a>
+                            </span>
+                            <span class="edit"><a href="@Url.Action("Edit_kid", "Kids",new{id=@item.ID})">
+                                    <img alt=@item.name src="~/images/draw.png"> </a>
+                            </span>
+                            <span class="delet"><a href="@Url.Action("Delete_kid", "Kids",new{id=@item.ID})">
+                                    <img alt=@item.name src="~/images/trash.png"> </a>
+                            </span>
+                        </td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+
+</div>

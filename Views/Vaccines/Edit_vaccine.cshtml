@@ -1,0 +1,47 @@
+﻿
+
+@model Vaccinatedclient.Models.vaccine
+
+    <div class="main">
+            <div class="main_top">
+                <img src="/images/element223111-9f3.svg" alt="user">
+                <h2>إضافة  طفل  </h2>
+            </div>
+            <div class="main_bottom">
+                <form enctype="multipart/form-data" asp-action="Edit_vaccine">
+                <div class="form_input">
+                    <div class="main_det">
+                 <div class="main_det_input">   
+                    <div class="text_input">
+                        <h3>رقم الجرعة </h3>
+                        <input asp-for=ID disabled type="text">
+                    </div>
+                    <div class="text_input">
+                        <h3>أسم الجرعة</h3>
+                        <input asp-for="name" type="text">
+                    </div>
+                    <div class="text_input">
+                        <h3>وقت أخذ الجرعة بالايام  </h3>
+                        <input asp-for="days_to_take" >
+                    </div>
+                     <div class="text_input">
+                        <h3>أسم الجرعة  </h3>
+                          @Html.DropDownListFor(x => Model.dose_id, Model.dose_list, "أختر اسم الجرعة ")
+                    </div>
+                    <div class="text_input">
+                        <h3>الوصف </h3>
+                        <input asp-for="desc" >
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                    <div class="submit_buttons">
+                        <input type="submit" name="حفظ" value="save">
+                        <button>ألغاء</button>
+                    </div>
+                </form>
+               
+            </div>
+
+        </div>
+

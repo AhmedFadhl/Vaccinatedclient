@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Vaccinatedclient.Models.vaccine>
+
+    
+        <div class="main">
+            <div class="main_top">
+                <img src="~/images/element223111-9f3.svg" alt="user">
+                <h2>الجرع</h2>
+            </div>
+            <hr>
+            <div class="main_middel">
+                <button><a asp-action="add_vaccine" asp-controller="Vaccines">إضافة</a></button>
+                <hr>
+            </div>
+            <div class="main_bottom">
+                <table class="table_toggler" id="dtable">
+                    <thead>
+                        <tr>
+                            <th>رقم الجرعة</th>
+                            <th>أسم الجرعة</th>
+                            <th>وقت الجرعه بالايام</th>
+                            <th>أسم اللقاح </th>
+                            <th>العمليات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            
+                        <tr>
+                            <td>@item.ID</td>
+                            <td>@item.name</td>
+                            <td>@item.days_to_take</td>
+                            @if (item.dose!=null)
+                            {
+                            <td>@item.dose.name</td>
+                                
+                            }else{
+
+                            <td>"لايوجد معلومات "</td>
+                            }
+                             <td class="management">
+                                <span class="edit"><a href="@Url.Action("Edit_vaccine", "Vaccines",new{id=@item.ID})">
+                                   <img alt=@item.name src="~/images/draw.png"> </a>
+                                </span>
+                                <span class="delet"><a href="@Url.Action("Delete_vaccine", "Vaccines",new{id=@item.ID})">
+                                   <img alt=@item.name src="~/images/trash.png"> </a>
+                                </span>
+                            </td>
+                        </tr>
+                        }
+
+
+                </tbody>
+                </table>
+            </div>
+
+        </div>

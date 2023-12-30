@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Vaccinatedclient.Models.advices>
+
+    
+        <div class="main">
+            <div class="main_top">
+                <img src="images/element223111-9f3.svg" alt="user">
+                <h2>النصائح </h2>
+            </div>
+            <hr>
+            <div class="main_middel">
+                <button><a asp-action="add_advice" asp-controller="Advice">إضافة</a></button>
+                <hr>
+            </div>
+            <div class="main_bottom">
+                <table class="table_toggler" id="dtable">
+                    <thead>
+                        <tr>
+                            <th>رقم النصيحة </th>
+                            <th>أسم النصيحة  </th>
+                            <th>الوصف </th>
+                            <th>العمليات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            
+                        <tr>
+                            <td>@item.ID</td>
+                            <td>@item.name</td>
+                            <td>@item.desc</td>
+                             <td class="management">
+                             <span class="edit"><a href="@Url.Action("Edit_advice", "Advice",new{id=@item.ID})">
+                         <img alt=@item.name src="/images/draw.png"> </a></span>
+                             <span class="delet"><a href="@Url.Action("Delete_advice", "Advice",new{id=@item.ID})">
+                         <img alt=@item.name src="/images/trash.png"> </a></span>
+
+                            </td>
+                        </tr>
+                        }
+
+
+                </tbody>
+                </table>
+            </div>
+
+        </div>

@@ -1,0 +1,104 @@
+﻿   @model Vaccinatedclient.Models.parents
+     <div class="main">
+            <div class="main_top">
+                <img src="/images/element223111-9f3.svg" alt="user">
+                <h2>إضافة أولياء أمور </h2>
+            </div>
+
+            <div class="main_bottom">
+                <form enctype="multipart/form-data" asp-action="Edit_parents">
+                <div class="form_input">
+                    <div class="main_det">
+                 <div class="main_det_input">   
+                    <div class="text_input">
+                        <h3>رقم ولي الأمر</h3>
+                        <input asp-for=ID  disabled type="text">
+                    </div>
+                    <div class="text_input">
+                        <h3>أسم ولي الأمر</h3>
+                        <input asp-for="name" type="text">
+                    </div>
+                    <div class="text_input">
+                        <h3> رقم الهوية</h3>
+                        <input asp-for="id_card_number" type="text">
+                    </div>
+                  </div>
+
+                    <div class="file_input">
+                        <img id="blah" src="/images/account3041-8vxc.svg" alt="">
+                        <span class="file_span">
+                            <input  asp-for="picture" name="picture" onchange="readURL(this);" type="file">
+                        </span>
+                    </div>
+                </div>
+                <div class="second_section">
+                <div class="second_det">
+                    <h3>المعلومات الأساسية</h3>
+                    <span></span>
+                    <div class="text_input">
+                        <h3>الجنسية</h3>
+                        <input asp-for="nationality">
+                    </div>
+                    <div class="date_input">
+                        <h3>تاريخ الميلاد</h3>
+
+                        <input asp-for="pirth_date" type="datetime-local">
+                    </div>
+                    <div class="text_input">
+                        <h3>مكان الميلاد</h3>
+                        <input asp-for="pirth_place" >
+                    </div>
+                    <div class="text_input">
+                        <h3>الحالة الأجتماعية</h3>
+                       <select asp-for=marital_status dir="ltr" class="fild" >
+                                    <option value="1" selected >متزوج </option>
+                                    <option value="2">مطلق</option>
+                                </select>
+                    </div>
+                    <div class="text_input">
+                        <h3>الجنس </h3>
+                                <select asp-for=gender dir="ltr" class="fild" >
+                                    <option value="1" selected >ذكر </option>
+                                    <option value="2"> أنثى</option>
+                                </select>   
+                    </div>
+                    <div class="text_input">
+                        <h3>أسم المستخدم </h3>
+                        <input asp-for="user_name">
+                    </div>
+                    <div class="text_input">
+                        <h3>كلمةالسر</h3>
+                        <input asp-for="password" >
+                    </div>
+                </div>
+                <div class="contact_det">
+                    <h3>معلومات الأتصال</h3>
+                    <div class="text_input">
+                        <h3>رقم الجوال</h3>
+                        <input asp-for="mobile_number" >
+                    </div>
+                    <div class="text_input">
+                        <h3>رقم الهاتف الثابت</h3>
+                        <input asp-for="phone_number" >
+                    </div>
+                    <div class="text_input">
+                        <h3>البريد الألكتروني</h3>
+                        <input asp-for="email" >
+                    </div>
+                    <div class="text_input">
+                        <h3>العنوان</h3>
+                        <input asp-for="address" >
+                        <input asp-for=image_path type="hidden" />
+                    </div>
+                </div>
+                </div>
+            </div>
+                    <div class="submit_buttons">
+                        <input type="submit" name="حفظ" value="save">
+                        <button>ألغاء</button>
+                    </div>
+                </form>
+               
+            </div>
+
+        </div>

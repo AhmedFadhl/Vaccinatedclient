@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم</title>
+
+    <link rel="stylesheet" href="~/css/add.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/font1.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/font2.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/font4.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/buttons.bootstrap5.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/jquery.dataTables.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/leafleft.css" asp-append-version="true" />
+
+
+
+    <script src="~/js/jquery.min.js" asp-append-version="true"></script>
+    <script src="~/js/dataTables.bootstrap.min.js" asp-append-version="true"></script>
+    <script src="~/js/jquery.dataTables.min.js" asp-append-version="true"></script>
+    <script src="~/js/dataTables.buttons.min.js" asp-append-version="true"></script>
+    <script src="~/js/buttons.colVis.min.js" asp-append-version="true"></script>
+    <script src="~/js/buttons.html5.min.js" asp-append-version="true"></script>
+    <script src="~/js/buttons.bootstrap5.min.js" asp-append-version="true"></script>
+    <script src="~/js/buttons.print.min.js" asp-append-version="true"></script>
+    <script src="~/js/jszip.min.js" asp-append-version="true"></script>
+    <script src="~/js/pdfmake.min.js" asp-append-version="true"></script>
+    <script src="~/js/vfs_fonts.js" asp-append-version="true"></script>
+    <script src="~/js/leafleft.js" asp-append-version="true"></script>
+
+
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="second_container">
+
+            <header>
+                <div class="top_right">
+                    <img src="~/images/logo.png" alt="logo">
+                    <h2>Doctor</h2>
+                </div>
+                <div class="top_left">
+
+                    <form action="post">
+                        <input id="myinput" onkeyup="myfunction()" placeholder="أبحث هنا">
+                    </form>
+                    <img class="seitting_icon" src="~/images/settingsbutton1572-frxk.svg" alt="sitting">
+                    @*
+                    <img src="~/images/minotification1572-viuo.svg" alt="notifcations">
+                    *@
+                </div>
+            </header>
+            <div class="container">
+                <aside>
+                    <a asp-action="index" asp-controller="Home">
+                        <div class="aside_item">
+                            <img src="~/images/element223111-9f3.svg" alt="dashboard">
+                            <h3>لوحة التحكم</h3>
+                        </div>
+                    </a>
+                    <a asp-action="index" asp-controller="parents">
+                        <div class="aside_item">
+                            <img src="~/images/vectori311-lrta.svg" alt="أولياء الامور">
+                            <h3>اولياءالامور </h3>
+                        </div>
+                    </a>
+
+                        <div>
+
+                            <div class="aside_item">
+                                <!--
+                            <span class="material-symbols-sharp">home</span> -->
+                                <img src="~/images/vectori311-lrta.svg" alt="">
+                                <h3>الأطفال</h3>
+                                <span>></span>
+                            </div>
+                            <ul>
+                                <li><a asp-action="get_kids" asp-controller="Kids">الاطفال</a></li>
+                                <li><a asp-action="Index" asp-controller="kid_vaccine">لقاحات الاطفال </a></li>
+                            </ul>
+                        </div>
+
+
+
+                    <a asp-action="Index" asp-controller="Dose">
+                        <div class="aside_item">
+                            <img src="~/images/dose3111-3grxd-200h.png" alt="dashboard">
+                            <h3>اللقاحات </h3>
+                        </div>
+                    </a>
+                    <a asp-action="Index" asp-controller="Notify">
+                        <div class="aside_item">
+                            <img src="~/images/dose3111-3grxd-200h.png" alt="dashboard">
+                            <h3>الاعلامات </h3>
+                        </div>
+                    </a>
+                    <a asp-action="Index" asp-controller="Vaccines">
+                        <div class="aside_item">
+                            <img src="~/images/syringe3111-yji-200w.png" alt="dashboard">
+                            <h3>الجرع </h3>
+                        </div>
+                    </a>
+                    <a asp-action="index" asp-controller="Advice">
+                        <div class="aside_item">
+                            <img src="~/images/syringe3111-yji-200w.png" alt="dashboard">
+                            <h3>النصائح </h3>
+                        </div>
+                    </a>
+                    <div>
+
+                        <div class="aside_item">
+                            <!--
+                            <span class="material-symbols-sharp">home</span> -->
+                            <img src="~/images/icons/sales.png" alt="">
+                            <h3>المستشفيات والمراكز</h3>
+                            <span>></span>
+                        </div>
+                        <ul>
+                            <li><a asp-action="hospital" asp-controller="Hospitals">المستشفيات والمراكز</a></li>
+                            <li><a asp-action="cities" asp-controller="Cities">المدن </a></li>
+                            <li><a asp-action="hospital_type" asp-controller="Hospitals">أنواع المستشفيات</a></li>
+                        </ul>
+                    </div>
+                    <a asp-action="index" asp-controller="Advice">
+                        <div class="aside_item">
+                            <img src="~/images/syringe3111-yji-200w.png" alt="dashboard">
+                            <h3>تسجيل الخروج </h3>
+                        </div>
+                    </a>
+                </aside>
+                @* @{
+                Html.RenderPartial("_Alerts");
+                } *@
+                @RenderBody()
+            </div>
+
+
+        </div>
+    </div>
+    <script src="~/js/dash.js" asp-append-version="true"></script>
+    <script src="~/js/map.js" asp-append-version="true"></script>
+
+</body>
+
+</html>

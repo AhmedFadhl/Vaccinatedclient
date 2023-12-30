@@ -1,0 +1,59 @@
+﻿@model Vaccinatedclient.Models.hospital
+
+<div class="main">
+    <div class="main_top">
+        <img src="/images/element223111-9f3.svg" alt="user">
+        <h2>إضافة نوع للمراكز والمستشفيات </h2>
+    </div>
+
+    <div class="main_bottom">
+        <form enctype="multipart/form-data" asp-action="add_hospital">
+            <div class="form_input">
+                <div class="main_det">
+                    <div class="main_det_input">
+                        <div class="text_input">
+                            <h3>رقم المستشفى</h3>
+                            <input asp-for=ID disabled type="text">
+                        </div>
+                        <div class="text_input">
+                            <h3>أسم المستشفى</h3>
+                            <input asp-for="name" type="text">
+                        </div>
+                        <div class="text_input">
+                            <h3>العنوان </h3>
+                            <input asp-for="address" type="text">
+                        </div>
+                        <div class="text_input">
+                            <h3>رقم الهاتف</h3>
+                            <input asp-for="phone_number" type="text">
+                        </div>
+                        <div class="text_input">
+                            <h3>نوع المركز </h3>
+                            @Html.DropDownListFor(x => Model.type_id, Model.hospital_types, "أختر نوع المركز")
+                        </div>
+                        <div class="text_input">
+                            <h3>نوع المركز </h3>
+                            @Html.DropDownListFor(x => Model.city_id, Model.cities, "أختر أسم المدينه ")
+                        </div>
+                    </div>
+                    <div>
+                        <input class="fild" id="latitude" type="hidden" required asp-for=latitude placeholder="">
+                        <input class="fild" id="longitude" type="hidden" required asp-for=longtitude placeholder="">
+                    </div>
+                    <div>
+
+                        <span>اختار الموقع في الخريطة</span>
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="submit_buttons">
+                <input type="submit" name="حفظ" value="save">
+                <button>ألغاء</button>
+            </div>
+        </form>
+
+    </div>
+
+</div>
+

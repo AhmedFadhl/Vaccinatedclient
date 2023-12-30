@@ -1,0 +1,137 @@
+﻿@model IEnumerable<Vaccinatedclient.Models.parents>
+
+
+ @*    <script>  
+        $(document).ready(function () {  
+            $("#dtable").DataTable({  
+                "processing": true, // for show progress bar  
+                "serverSide": true, // for process server side  
+                
+                "filter": false, // this is for disable filter (search box)  
+                "orderMulti": false, // for disable multiple column at once  
+                "pageLength": 6,
+
+                "ajax": {  
+                    "url": "/parents/getdata",  
+                    "type": "POST",  
+                    "datatype": "json",  
+                },  
+                  "dom": 'Blfrtip',
+                 "buttons": [
+                     {
+                         extend:    'excel',
+                         text:      '<i class="excel"></i>تصدير',
+                         titleAttr: 'Excel'
+                     },
+                     {
+                         extend:    'print',
+                         text:      '<i class="excel"></i>طباعة',
+                         titleAttr: 'PRINT'
+                     },
+                     {
+                         extend:    'pdf',
+                         text:      '<i class="excel"></i>pdf',
+                         titleAttr: 'PDF'
+                     }
+               ],
+                
+                "columns": [  
+                      { "recordsFiltered": "ID", "autoWidth": true ,"searchable":true,"sortable":true },  
+                      { "recordsFiltered": "name", "autoWidth": true ,"searchable":true },  
+                      { "recordsFiltered": "address", "autoWidth": true ,"searchable":true },  
+                      { "recordsFiltered": "phone_number", "autoWidth": true ,"searchable":true },  
+                      { "recordsFiltered": "gender_string", "autoWidth": true ,"searchable":true },  
+ 
+  
+                      {"render": function (data, type, recordsFiltered, meta) { 
+                             return `<a href='/parents/Editparent/${recordsFiltered.ID}' class='btn btn-warning'>Edit</a>`; 
+                        }
+                        },
+            
+                ],
+             });  
+
+        }); 
+        
+      
+
+
+          
+   
+
+
+function edit(rowContext) {
+    if (table) {
+        var data = table.row($(rowContext).parents("tr")).data();
+        alert("Example showing row edit with id: " + data["ID"] + ", name: " + data["name"]);
+    }
+}
+
+
+
+
+
+
+    </script> 
+*@
+
+
+
+
+        <div class="main">
+            <div class="main_top">
+                <img src="images/element223111-9f3.svg" alt="user">
+                <h2>لوحة التحكم</h2>
+            </div>
+            <hr>
+            <div class="main_middel">
+                <button><a asp-action="add_parent" asp-controller="parents">إضافة</a></button>
+                <hr>
+            </div>
+            <div class="main_bottom">
+                <table class="table_toggler" id="dtable">
+                    <thead>
+                        <tr>
+                            <th>رقم ولي الأمر</th>
+                            <th>أسم ولي الأمر </th>
+                            <th>رقم الجوال</th>
+                            <th>العنوان</th>
+                            <th>الجنس</th>
+                            <th>العمليات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            
+                        <tr>
+                            <td>@item.ID</td>
+                            <td>@item.name</td>
+                            <td>@item.mobile_number</td>
+                            <td>@item.address</td>
+                            @if (item.gender==1)
+                            {
+                                
+                            <td>ذكر</td>
+                            }
+                            else if(item.gender==2)
+                            {
+                                
+                            <td>انثى</td>
+                            }
+                             <td class="management">
+                             <span class="edit"><a href="@Url.Action("Edit_parents", "parents",new{id=@item.ID})">
+                         <img alt=@item.name src="/images/draw.png"> </a></span>
+                             <span class="delet"><a href="@Url.Action("Delete_parent", "parents",new{id=@item.ID})">
+                         <img alt=@item.name src="/images/trash.png"> </a></span>
+
+                            </td>
+                        </tr>
+                        }
+
+
+                </tbody>
+                </table>
+            </div>
+
+        </div>

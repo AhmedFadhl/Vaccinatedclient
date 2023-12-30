@@ -1,0 +1,116 @@
+﻿@model Vaccinatedclient.Models.UserDto
+@inject IHttpContextAccessor context
+@{
+  Layout = "";
+}
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+
+
+
+</head>
+
+<body>
+
+@if (!ViewData.ModelState.IsValid && ViewData.ModelState["Error"].Errors.Count > 0)
+{
+    <div class="alert alert-
+       <strong>Error!</strong> danger">@ViewData.ModelState["Error"].Errors.First().ErrorMessage
+    </div>
+}
+
+
+
+
+
+  <h2>تسجبل الدخول </h2>
+
+  <button class="loginbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">تسجيل
+    دخول</button>
+  <button class="loginbtn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">تسجيل
+    حساب</button>
+
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate" asp-action="Login" asp-controller="Login" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <img src="/images/pro4.jpg" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>رقم الهاتف </b></label>
+        <input placeholder=" أدخل رقم الهاتف " asp-for=user_name required>
+        <label for="upass"><b>كلمة السر</b></label>
+        <input placeholder=" أدخل كلمة السر " asp-for=Password required>
+
+
+
+        <button class="loginbtn" type="submit">تسجيل دخول</button>
+
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+          class="cancelbtn">الغاء</button>
+      </div>
+    </form>
+  </div>
+
+
+  <div id="id02" class="modal">
+
+    <form class="modal-content animate" asp-action="Register" asp-controller="Login" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <img src="/images/pro4.jpg" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>أٍسم المستخدم </b></label>
+        <input placeholder=" أدخل أسم المستخدم " asp-for=user_name required>
+        <label for="upass"><b>كلمة السر</b></label>
+        <input placeholder=" أدخل كلمة السر " asp-for=Password required>
+
+
+
+        <button class="loginbtn" type="submit">تسجيل دخول</button>
+
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'"
+          class="cancelbtn">الغاء</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    var modal2 = document.getElementById('id02');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+
+    }window.onclick = function (event) {
+      if (event.target == modal2) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
